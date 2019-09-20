@@ -1,0 +1,98 @@
+@import "vars.less";
+@import "smart-grid.less";
+
+.reset();
+
+h1, h2, h3, h4, h5, h6,
+p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+.debugGrid{
+	.debug(rgba(0, 0, 0, 0.3), 1px #ff0 solid);
+}*/
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+        url('../fonts/MullerMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerExtraBold.woff2') format('woff2'),
+        url('../fonts/MullerExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muller', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: @coor_blue;
+    background: @color_white;
+}
+
+.container{
+	.wrapper();
+}
+
+.sg-row {
+    .row-flex();
+}
+
+.sg-col {
+    .col();
+}
+
+img {
+    display: block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+
+
+@import "sections/header.less";
+@import "sections/offer.less";
+/*
+@import "sections/present.less";
+@import "sections/prop.less";
+@import "sections/discover.less";
+@import "sections/adv.less";
+@import "sections/blog.less";
+@import "sections/stats.less";
+@import "sections/packages.less";
+*/

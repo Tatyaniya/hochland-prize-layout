@@ -1,0 +1,101 @@
+.offer {
+    background: url('../img/first-bg.jpg') no-repeat center -125px ;
+    background-size: cover;
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 45px;
+    }
+
+    &__medal {
+        position: absolute;
+        top: -67px;
+        right: 221px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        margin-bottom: 50px;
+        & span {
+            text-transform: uppercase;
+        }
+    }
+
+    &__title {
+        width: 445px;
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        width: 325px;
+        margin-bottom: 45px;
+    }
+
+    &__cashback {
+        font-size: 255px;
+        font-weight: bold;
+        line-height: 176px;
+        letter-spacing: -12px;
+        text-transform: uppercase;
+    }
+
+    &__cashback p {
+        margin-left: -36px;
+    }
+}
+
+.comeback {
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 63px;
+    text-transform: uppercase;
+    text-align: center;
+    color: @color_white;
+    background: @coor_blue;
+    
+    &__text {
+        position: relative;
+    }
+    &__text:after {
+        content: "*";
+        font-size: 21px;
+        position: absolute;
+        top: 2px;
+        right: -12px;
+    }
+}
+
+.prize-menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.prize-menu__item {
+    width: 16.66%;
+    height: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prize-menu__link {
+    color: @coor_blue;
+}
+
+.prize-menu__item:hover {
+    background: @color_red;
+    transition: all 0.5s ease;
+}
+
+.prize-menu__item:hover .prize-menu__link {
+    color: @color_white;
+}
