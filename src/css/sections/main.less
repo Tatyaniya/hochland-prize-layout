@@ -1,5 +1,5 @@
 .offer {
-    background: url('../img/first-bg.jpg') no-repeat center -125px ;
+    background: url('../img/first-bg.jpg') no-repeat center top;
     background-size: cover;
 
     &__content {
@@ -66,17 +66,17 @@
         content: "*";
         font-size: 21px;
         position: absolute;
-        top: 2px;
+        top: 1px;
         right: -12px;
     }
 }
 
-.prize-menu__list {
+.prizeMenu__list {
     display: flex;
     align-items: center;
 }
 
-.prize-menu__item {
+.prizeMenu__item {
     width: 16.66%;
     height: 80px;
     font-size: 20px;
@@ -87,15 +87,15 @@
     justify-content: center;
 }
 
-.prize-menu__link {
+.prizeMenu__link {
     color: @coor_blue;
 }
 
-.prize-menu__item:hover {
+.prizeMenu__item:hover {
     background: @color_red;
     transition: all 0.5s ease;
 }
 
-.prize-menu__item:hover .prize-menu__link {
+.prizeMenu__item:hover .prizeMenu__link {
     color: @color_white;
 }

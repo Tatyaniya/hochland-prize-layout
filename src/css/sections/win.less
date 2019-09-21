@@ -1,0 +1,86 @@
+.win {
+    background: url('../img/bg-blue.jpg') no-repeat center top;
+    background-size: cover;
+    padding-top: @section_padding;
+    padding-bottom: @section_padding;
+}
+
+.winTerm {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &--arrowRight:after,
+    &--arrowLeft:after {
+        width: 190px;
+        height: 190px;
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 3;
+    }
+
+    &--arrowRight:after {
+        background: url('../img/arrow-right.png') no-repeat center center;
+        top: 75%;
+        left: 46%;
+    }
+
+    &--arrowLeft:after {
+        background: url('../img/arrow-left.png') no-repeat center center;
+        top: 70%;
+        left: 49%;
+    }
+
+    &__text--1 {
+        padding-top: 42px;
+    }
+
+    &__desc {
+        width: 50%;
+        font-size: 30px;
+        color: @color_white;
+        display: flex;
+        align-items: center;
+    }
+
+    &__numb {
+        flex-basis: 125px;
+        font-size: 150px;
+        font-weight: bold;
+        font-style: italic;
+        color: @color_blue_light;
+    }
+
+    &__yellow {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: @color_yellow;
+    }
+
+    &__img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__yellow--pl20 {
+        padding-left: 20px;
+        & span {
+            display: block;
+            padding-left: 15px;
+        }
+    }
+
+    &__yellow--pl40 {
+        padding-left: 40px;
+    }
+
+    &__white--mb {
+        margin-bottom: 8px;
+    }
+
+    &__white--pl60 {
+        padding-left: 60px;
+    }
+}
