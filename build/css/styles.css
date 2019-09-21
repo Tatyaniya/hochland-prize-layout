@@ -352,7 +352,7 @@ a {
 .offer__cashback {
   font-size: 255px;
   font-weight: bold;
-  line-height: 176px;
+  line-height: 175px;
   letter-spacing: -12px;
   text-transform: uppercase;
 }
@@ -408,13 +408,11 @@ a {
   color: #0a4486;
 }
 
-.prizeMenu__item:hover {
+.prizeMenu__item--active {
   background: #ed1c24;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
-.prizeMenu__item:hover .prizeMenu__link {
+.prizeMenu__item--active .prizeMenu__link {
   color: #fff;
 }
 
@@ -573,6 +571,70 @@ a {
 
 .priseItem__text--small {
   width: 165px;
+}
+
+.footer {
+  background: #0a4486;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  justify-content: space-around;
+}
+
+.hochland {
+  display: -webkit-box;
+  display: flex;
+}
+
+.hochland__year {
+  padding: 0 14px;
+  border-right: 1px solid #fff;
+  margin-right: 14px;
+}
+
+.social {
+  display: -webkit-box;
+  display: flex;
+}
+
+.social__item {
+  width: 33px;
+  height: 33px;
+  margin-right: 17px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__item:hover {
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.corporate {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.corporate__icon {
+  width: 33px;
+  height: 33px;
+  margin-right: 40px;
 }
 
 @media screen and (max-width: 992px) {
