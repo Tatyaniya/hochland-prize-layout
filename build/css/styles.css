@@ -195,7 +195,8 @@ body {
 .section-bg,
 .win,
 .winners,
-.feedback {
+.feedback,
+.entrance {
   background: url('../img/bg-blue.jpg') no-repeat center top;
   background-size: cover;
 }
@@ -203,7 +204,8 @@ body {
 .title-2,
 .prize__title,
 .winCont__title,
-.feedCont__title {
+.feedCont__title,
+.entrCont__title {
   font-size: 60px;
   line-height: 75px;
   font-weight: 800;
@@ -860,6 +862,119 @@ a {
 
 .feedCont__btn {
   width: 340px;
+}
+
+.entrance {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.entrCont__form {
+  width: 790px;
+}
+
+.entrCont__label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.entrCont__label--1 {
+  margin-bottom: 20px;
+}
+
+.entrCont__label--2 {
+  margin-bottom: 27px;
+}
+
+.entrCont__text {
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+.entrCont__input {
+  width: 518px;
+  height: 50px;
+  padding-left: 17px;
+  font-size: 24px;
+  color: #0a4486;
+  outline: none;
+  border: none;
+}
+
+.entrCont__input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.entrCont__input::-moz-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.entrCont__input:-ms-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.entrCont__input::-ms-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.entrCont__input::placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.entrCont__buttons {
+  width: 518px;
+  margin-left: auto;
+}
+
+.entrCont__btn {
+  width: 340px;
+  margin-bottom: 55px;
+}
+
+.entrCont__register,
+.entrCont__link {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.entrCont__register {
+  text-align: center;
+}
+
+.entrCont__link {
+  border-bottom: 1px solid #fff;
+}
+
+.entrCont__link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.forgot {
+  margin-bottom: 66px;
+  text-align: right;
+}
+
+.forgot__link {
+  font-size: 18px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.forgot__link:hover {
+  border-bottom: 1px solid transparent;
 }
 
 @media screen and (max-width: 992px) {
