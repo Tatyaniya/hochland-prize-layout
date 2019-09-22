@@ -1,0 +1,59 @@
+.winners {
+    &:extend(.section-bg);
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.winCont {
+    &__title {
+        &:extend(.title-2);
+    }
+}
+
+.winRegister {
+    &__header {
+        display: flex;
+        margin-bottom: 34px;
+    }
+
+    &__icon {
+        margin-right: 24px;
+    }
+
+    &__title {
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: @color_white;
+    }
+
+    &__list {
+        font-size: 18px;
+        line-height: 42px;
+        background: @color_white;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__name,
+    &__phone,
+    &__technic {
+        width: 33.33%;
+        padding-left: 27px;
+        border-bottom: 2px solid @coor_blue;
+    }
+
+    &__name,
+    &__phone,
+    &__item {
+        border-right: 2px solid @coor_blue;
+    }
+}

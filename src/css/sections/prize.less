@@ -4,11 +4,8 @@
     box-sizing: content-box;
 
     &__title {
-        font-size: 60px;
-        line-height: 75px;
-        font-weight: 800;
-        text-align: center;
-        text-transform: uppercase;
+        &:extend(.title-2);
+        color: @coor_blue;
         margin-bottom: 45px;
         & span {
             display: block;

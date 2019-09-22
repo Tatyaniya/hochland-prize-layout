@@ -73,6 +73,21 @@ body {
     .col();
 }
 
+.section-bg {
+    background: url('../img/bg-blue.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.title-2 {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: @color_white;
+    margin-bottom: 70px;
+}
+
 img {
     display: block;
 }
@@ -83,6 +98,28 @@ a {
     transition: all 0.5s ease;
 }
 
+.button {
+    display: block;
+    border: none;
+    outline: none;
+    height: 52px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: @coor_blue;
+    background: @color_yellow;
+    border: 2px solid @color_yellow;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+
+    &:hover {
+        color: @color_yellow;
+        background: @coor_blue;
+    }
+}
+
 
 
 @import "sections/header.less";
@@ -90,3 +127,5 @@ a {
 @import "sections/win.less";
 @import "sections/prize.less";
 @import "sections/footer.less";
+@import "sections/winners.less";
+@import "sections/feedback.less";

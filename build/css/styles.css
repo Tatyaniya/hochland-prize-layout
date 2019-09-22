@@ -192,6 +192,27 @@ body {
   margin-right: 12.5px;
 }
 
+.section-bg,
+.win,
+.winners,
+.feedback {
+  background: url('../img/bg-blue.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.title-2,
+.prize__title,
+.winCont__title,
+.feedCont__title {
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
 img {
   display: block;
 }
@@ -201,6 +222,29 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.button {
+  display: block;
+  border: none;
+  outline: none;
+  height: 52px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0a4486;
+  background: #ffd800;
+  border: 2px solid #ffd800;
+  margin: 0 auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  color: #ffd800;
+  background: #0a4486;
 }
 
 .header {
@@ -417,8 +461,6 @@ a {
 }
 
 .win {
-  background: url('../img/bg-blue.jpg') no-repeat center top;
-  background-size: cover;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -517,11 +559,7 @@ a {
 }
 
 .prize__title {
-  font-size: 60px;
-  line-height: 75px;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
+  color: #0a4486;
   margin-bottom: 45px;
 }
 
@@ -574,7 +612,7 @@ a {
 }
 
 .footer {
-  background: #0a4486;
+  background: #0d54a6;
   color: #fff;
   font-size: 18px;
   font-weight: normal;
@@ -635,6 +673,193 @@ a {
   width: 33px;
   height: 33px;
   margin-right: 40px;
+}
+
+.winners {
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.winRegister__header {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.winRegister__icon {
+  margin-right: 24px;
+}
+
+.winRegister__title {
+  width: 33.33%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.winRegister__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.winRegister__list {
+  font-size: 18px;
+  line-height: 42px;
+  background: #fff;
+}
+
+.winRegister__item {
+  display: -webkit-box;
+  display: flex;
+}
+
+.winRegister__name,
+.winRegister__phone,
+.winRegister__technic {
+  width: 33.33%;
+  padding-left: 27px;
+  border-bottom: 2px solid #0a4486;
+}
+
+.winRegister__name,
+.winRegister__phone,
+.winRegister__item {
+  border-right: 2px solid #0a4486;
+}
+
+.feedback {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.feedCont__form {
+  width: 885px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.feedCont__select-wrapper {
+  position: relative;
+}
+
+.feedCont__select {
+  width: 100%;
+  height: 50px;
+  line-height: 49px;
+  padding-left: 20px;
+  color: #0a4486;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.feedCont__select:focus {
+  outline: none;
+  border: none;
+}
+
+.feedCont__select-choice {
+  width: 32px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+
+.feedCont__up,
+.feedCont__down {
+  left: 0;
+  position: absolute;
+  border: 7px solid transparent;
+}
+
+.feedCont__up {
+  top: 11px;
+  border-bottom: 7px solid #0a4486;
+}
+
+.feedCont__down {
+  top: 29px;
+  border-top: 7px solid #0a4486;
+}
+
+.feedCont__textarea {
+  width: 100%;
+  min-height: 200px;
+  line-height: 48px;
+  border: none;
+  font-size: 24px;
+  color: #0a4486;
+  padding-left: 20px;
+  resize: none;
+  outline: none;
+  margin-bottom: 50px;
+}
+
+.feedCont__textarea::-webkit-input-placeholder {
+  color: #0a4486;
+}
+
+.feedCont__textarea::-moz-placeholder {
+  color: #0a4486;
+}
+
+.feedCont__textarea:-ms-input-placeholder {
+  color: #0a4486;
+}
+
+.feedCont__textarea::-ms-input-placeholder {
+  color: #0a4486;
+}
+
+.feedCont__textarea::placeholder {
+  color: #0a4486;
+}
+
+.feedCont__input {
+  display: none;
+}
+
+.feedCont__input:checked + .feedCont__cont:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #0a4486;
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.feedCont__cont {
+  display: -webkit-box;
+  display: flex;
+  color: #fff;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.feedCont__check {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  margin-right: 24px;
+  margin-top: 3px;
+}
+
+.feedCont__text {
+  width: 93%;
+  font-size: 16px;
+}
+
+.feedCont__btn {
+  width: 340px;
 }
 
 @media screen and (max-width: 992px) {
