@@ -151,7 +151,7 @@
                             <input type="password" class="entrCont__input">
                         </label>
                         <div class="entrCont__forgot forgot">
-                            <a href="№" class="forgot__link">
+                            <a href="javascript:void(0);" class="forgot__link" id="modal-forgot">
                                 Забыли пароль?
                             </a>
                         </div>
@@ -220,7 +220,25 @@
         </div>
     </div>
 </footer>
+<div style="display: none;">
+    <div class="modal modal-entrance" id="exampleModal-entr">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h2 class="modal__title">
+            ЗабылИ пароль?
+        </h2>
+        <div class="modal__content">
+            <div class="modal6__desc">
+            </div>
+            <div class="modal6__img">
+                <img src="img/modal-img6.png" alt="photo">
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
