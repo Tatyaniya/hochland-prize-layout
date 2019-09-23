@@ -107,33 +107,141 @@
                     Регистрация
                 </h2>
                 <div class="regCont__form">
-                    <form action="#">
-                        <label class="entrCont__label entrCont__label--1">
-                            <span class="entrCont__text">
-                                телефон
-                            </span>
-                            <input type="text" class="entrCont__input" placeholder="+7 (___) _______">
-                        </label>
-                        <label class="entrCont__label entrCont__label--2">
-                            <span class="entrCont__text">
-                                Пароль
-                            </span>
-                            <input type="password" class="entrCont__input">
-                        </label>
-                        <div class="entrCont__forgot forgot">
-                            <a href="javascript:void(0);" class="forgot__link" id="modal-forgot">
-                                Забыли пароль?
-                            </a>
+                    <form action="#" class="formReg">
+                        <div class="formReg__row formReg__row--first">
+                            <div class="formReg__text">
+                                <span class="formReg__star">*</span>
+                                 - поля обязательные для заполнения
+                            </div>
                         </div>
-                        <div class="entrCont__buttons">
-                            <button type="submit" class="entrCont__btn button">
-                                войти
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Город<span class="formReg__star">*</span>
+                                </p>
+                                <div class="formReg__select-wrapper">
+                                    <select name="city" id="city" class="formReg__select">
+                                        <option value="value1">Выберите свой город</option>
+                                    </select>
+                                    <div class="formReg__select-choice">
+                                        <div class="formReg__select--img">
+                                            <img src="img/arrow-dw.png" alt="down">
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Имя<span class="formReg__star">*</span>
+                                </p>
+                                <input type="text" class="formReg__input" placeholder="Имя">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Фамилия<span class="formReg__star">*</span>
+                                </p>
+                                <input type="text" class="formReg__input" placeholder="Фамилия">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <p class="formReg__subtitle">
+                                Пол<span class="formReg__star">*</span>
+                            </p>
+                            <div class="gender formReg__gender">
+                                <label class="gender__item">
+                                    <input type="radio" name="gender" class="gender__checkbox">
+                                    <div class="gender__check"></div>
+                                    <span class="gebder__text">м</span>
+                                </label>
+                                <label class="gender__item">
+                                    <input type="radio" name="gender" class="gender__checkbox">
+                                    <div class="gender__check"></div>
+                                    <span class="gebder__text">ж</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Дата Рождения<span class="formReg__star">*</span>
+                                </p>
+                                <input type="text" class="formReg__input" placeholder="__.__.____">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    E-mail<span class="formReg__star">*</span>
+                                </p>
+                                <input type="text" class="formReg__input">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Телефон<span class="formReg__star">*</span>
+                                </p>
+                                <input type="text" class="formReg__input" placeholder="+7 (___) _______">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Пароль<span class="formReg__star">*</span>
+                                </p>
+                                <input type="password" class="formReg__input">
+                            </label>
+                        </div>
+                        <div class="formReg__row">
+                            <label class="formReg__label">
+                                <p class="formReg__subtitle">
+                                    Яндекс кошелек
+                                </p>
+                                <input type="text" class="formReg__input" placeholder="Чтобы отправить вам кэшбэк">
+                            </label>
+                        </div>
+                        <div class="formReg__row formReg__row--confirmation">
+                            <label class="formReg__label formReg__label--obligatory">
+                                <input type="checkbox" class="formReg__checkbox">
+                                <div class="formReg__chek"></div>
+                                <div class="formReg__obligatory">
+                                    <span class="formReg__star">*</span>
+                                    <p class="formReg__text formReg__text--long">
+                                        Подтверждаю свое согласие на обработку персональных данных, а также с принятой ООО «ХОХЛАНД РУССЛАНД» политикой конфиденциальности в отношении обработки и защиты персональных данных третьих лиц.
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="formReg__row formReg__row--confirmation">
+                            <label class="formReg__label formReg__label--obligatory">
+                                <input type="checkbox" class="formReg__checkbox">
+                                <div class="formReg__chek"></div>
+                                <div class="formReg__obligatory formReg__obligatory--ac">
+                                    <span class="formReg__star">*</span>
+                                    <p class="formReg__text formReg__text--long">
+                                        Подтверждаю, что я старше 18 лет.
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="formReg__buttons">
+                            <button type="submit" class="formReg__btn button" id="registration">
+                                Зарегистрироваться
                             </button>
-                            <div class="entrCont__register">
-                                или
-                                <a href="registration.html" class="entrCont__link">
-                                    ЗАРЕГИСТРИРУЙТЕСЬ
-                                </a>
+                            <div class="entranceLinks formReg__entrance">
+                                <div class="entranceLinks__item">
+                                    или
+                                    <a href="entrance.html" class="entranceLinks__link">
+                                        ВОЙДИТЕ,
+                                    </a>
+                                </div>
+                                <div class="entranceLinks__item">
+                                    ЕСЛИ УЖЕ ЗАРЕГИСТРИРОВАНЫ
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -191,22 +299,44 @@
     </div>
 </footer>
 <div style="display: none;">
-    <div class="modal modal-entrance" id="exampleModal-entr">
+    <div class="modal modal-reg" id="exampleModal-reg">
         <div class="modal-close box-modal_close arcticmodal-close">
             <img src="img/modal-close.png" alt="close">
         </div>
         <h3 class="modal__title">
-            ЗабылИ пароль?
+            Подтверждение регистрации
         </h3>
         <div class="modal__content">
-            <p class="modal__text">
-                Нажмите на кнопку «Получить пароль».
-            </p>
             <p class="modal__text modal__text--last">
-                На указанный при регистрации номер телефона придет
-                <span class="text-red-big">SMS</span><span class="text-red"> с вашим паролем.</span>
+                На Ваш номер выслано
+                <span class="text-red">SMS-сообщение с кодом</span>
+                подтверждения, введите его в форму подтверждения регистрации
             </p>
-            <a href="javascript:void(0);" class="modal__link get-password">Получить пароль</a>
+            <input type="text" class="modal__input" placeholder="Введите код из СМС">
+            <div class="modal__term text-black">
+                Срок действия кода: <span class="text-red">05:00</span>
+            </div>
+            <a href="#" class="modal__link modal__link--all" id="confirm">подтвердить</a>
+        </div>
+    </div>
+</div>
+<div style="display: none;">
+    <div class="modal modal-new-code" id="exampleModal-new-code">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h3 class="modal__title">
+            Подтверждение регистрации
+        </h3>
+        <div class="modal__content">
+            <div class="modal__expired">
+                Срок действия<br> кода истек
+            </div>
+            <p class="modal__text modal__text--last">
+                Нажмите <span class="text-red-up">«Новый код»</span><br>
+                для повторной отправки кода
+            </p>
+            <a href="javascript:void(0);" class="modal__link modal__link--all">новый код</a>
         </div>
     </div>
 </div>

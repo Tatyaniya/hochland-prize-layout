@@ -46,10 +46,6 @@
   background: #000 url(loading.gif) no-repeat 50% 50%;
 }
 
-.arcticmodal-overlay {
-  background-color: rgba(10, 68, 134, 0.9);
-}
-
 body,
 div,
 dl,
@@ -248,7 +244,8 @@ body {
 .win,
 .winners,
 .feedback,
-.entrance {
+.entrance,
+.registration {
   background: url('../img/bg-blue.jpg') no-repeat center top;
   background-size: cover;
 }
@@ -257,7 +254,8 @@ body {
 .prize__title,
 .winCont__title,
 .feedCont__title,
-.entrCont__title {
+.entrCont__title,
+.regCont__title {
   font-size: 60px;
   line-height: 75px;
   font-weight: 800;
@@ -1038,12 +1036,235 @@ a {
   border-bottom: 1px solid transparent;
 }
 
+.registration {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.regCont__form {
+  width: 790px;
+}
+
+.formReg__row,
+.formReg__label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+}
+
+.formReg__label--obligatory {
+  width: 100%;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.formReg__row {
+  margin-bottom: 20px;
+}
+
+.formReg__row--first {
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-left: 45px;
+}
+
+.formReg__row--confirmation {
+  width: 518px;
+  margin-left: auto;
+}
+
+.formReg__subtitle {
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+.formReg__select-wrapper {
+  position: relative;
+}
+
+.formReg__select-choice {
+  width: 24px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.formReg__text {
+  font-size: 16px;
+}
+
+.formReg__text--long {
+  width: 94%;
+}
+
+.formReg__star {
+  color: #ed1c24;
+}
+
+.formReg__input,
+.formReg__select {
+  width: 518px;
+  height: 50px;
+  padding-left: 17px;
+  font-size: 24px;
+  color: #0a4486;
+  outline: none;
+  border: none;
+}
+
+.formReg__input::-webkit-input-placeholder,
+.formReg__select::-webkit-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.formReg__input::-moz-placeholder,
+.formReg__select::-moz-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.formReg__input:-ms-input-placeholder,
+.formReg__select:-ms-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.formReg__input::-ms-input-placeholder,
+.formReg__select::-ms-input-placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.formReg__input::placeholder,
+.formReg__select::placeholder {
+  font-size: 24px;
+  color: #0a4486;
+}
+
+.formReg__checkbox {
+  display: none;
+}
+
+.formReg__chek {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  margin-top: 3px;
+}
+
+.formReg__obligatory {
+  display: -webkit-box;
+  display: flex;
+  width: calc(100% - 27px);
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.formReg__obligatory--ac {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.formReg__buttons {
+  width: 518px;
+  margin-top: 64px;
+  margin-left: auto;
+}
+
+.formReg__btn {
+  width: 340px;
+  margin-bottom: 48px;
+}
+
+.gender {
+  width: 518px;
+  display: -webkit-box;
+  display: flex;
+}
+
+.gender__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.gender__item:first-child {
+  margin-right: 30px;
+}
+
+.gender__checkbox {
+  display: none;
+}
+
+.gender__check {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+
+.formReg__checkbox:checked + .formReg__chek:after,
+.gender__checkbox:checked + .gender__check:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #0a4486;
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  border-radius: 50%;
+}
+
+.formReg__checkbox:checked + .formReg__chek:after {
+  top: 10px;
+}
+
+.entranceLinks {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.entranceLinks__link {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 6px;
+}
+
+.entranceLinks__link:hover {
+  border-bottom: 2px solid transparent;
+}
+
 .modal {
-  width: 700px;
+  max-width: 700px;
   background: #fff;
   padding: 60px 91px;
   position: relative;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal-reg {
+  padding: 60px 66px;
 }
 
 .modal-close {
@@ -1053,6 +1274,14 @@ a {
   top: 15px;
   right: 15px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal-close:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .modal__text {
@@ -1066,13 +1295,36 @@ a {
   margin-bottom: 43px;
 }
 
-.text-red,
-.text-red-big {
-  color: #ed1c24;
+.modal__input {
+  width: 518px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 28px;
 }
 
-.text-red-big {
-  text-transform: uppercase;
+.modal__input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #0a4486;
+}
+
+.modal__input::-moz-placeholder {
+  font-size: 18px;
+  color: #0a4486;
+}
+
+.modal__input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #0a4486;
+}
+
+.modal__input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #0a4486;
+}
+
+.modal__input::placeholder {
+  font-size: 18px;
+  color: #0a4486;
 }
 
 .modal__link {
@@ -1084,10 +1336,51 @@ a {
   text-align: center;
   color: #fff;
   background: #0a4486;
+  border: 2px solid #0a4486;
+}
+
+.modal__link:hover {
+  color: #0a4486;
+  background: #fff;
+}
+
+.modal__link--all {
+  width: 340px;
+}
+
+.modal__term {
+  margin-bottom: 32px;
+}
+
+.modal__expired {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ed1c24;
+  margin-bottom: 30px;
+}
+
+.text-red,
+.text-red-big {
+  color: #ed1c24;
+}
+
+.text-red-up {
+  color: #ed1c24;
+  text-transform: uppercase;
+}
+
+.text-red-big {
+  text-transform: uppercase;
 }
 
 .get-password {
   width: 100%;
+}
+
+.text-black {
+  font-size: 18px;
+  color: #000;
 }
 
 @media screen and (max-width: 992px) {

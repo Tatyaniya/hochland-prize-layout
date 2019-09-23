@@ -1,9 +1,14 @@
 .modal {
-    width: 700px;
+    max-width: 700px;
     background: @color_white;
     padding: 60px 91px;
     position: relative;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    &-reg {
+        padding: 60px 66px;
+    }
 
     &-close {
         width: 15px;
@@ -12,6 +17,10 @@
         top: 15px;
         right: 15px;
         cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__title {
@@ -28,10 +37,59 @@
             margin-bottom: 43px;
         }
     }
+
+    &__input {
+        width: 518px;
+        height: 50px;
+        text-align: center;
+        margin-bottom: 28px;
+
+        &::placeholder {
+            font-size: 18px;
+            color: @coor_blue;
+        }
+    }
+
+    &__link {
+        height: 50px;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        background: @coor_blue;
+        border: 2px solid @coor_blue;
+    
+        &:hover {
+            color: @coor_blue;
+            background: #fff;
+        }
+
+        &--all {
+            width: 340px;
+        }
+    }
+
+    &__term {
+        margin-bottom: 32px;
+    }
+
+    &__expired {
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: @color_red;
+        margin-bottom: 30px;
+    }
 }
 
 .text-red {
     color: @color_red;
+    &-up {
+        color: @color_red;
+        text-transform: uppercase;
+    }
 }
 
 .text-red-big {
@@ -39,17 +97,11 @@
     text-transform: uppercase;
 }
 
-.modal__link {
-    height: 50px;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 48px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    background: @coor_blue;
-}
-
 .get-password {
     width: 100%;
+}
+
+.text-black {
+    font-size: 18px;
+    color: #000;
 }

@@ -11,12 +11,26 @@ $( function() {
         });
     });
 
-    $('#modal2').click( function () {
-        $('#exampleModal2').arcticmodal();
+    $('#registration').click( function () {
+        $('#exampleModal-reg').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
-    $('#modal3').click( function () {
-        $('#exampleModal3').arcticmodal();
+    $('#confirm').click( function () {
+        $('#exampleModal-new-code').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
     $('#modal4').click( function () {
