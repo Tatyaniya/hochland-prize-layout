@@ -10,6 +10,10 @@
 .arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
 .arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
 
+.arcticmodal-overlay {
+    background-color: rgba(10, 68, 134, 0.9);
+}
+
 .reset();
 
 h1, h2, h3, h4, h5, h6,
@@ -97,6 +101,14 @@ body {
     margin-bottom: 70px;
 }
 
+.title-3 {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
 img {
     display: block;
 }
@@ -139,3 +151,5 @@ a {
 @import "sections/winners.less";
 @import "sections/feedback.less";
 @import "sections/entrance.less";
+@import "sections/modal.less";
+@import "sections/registration.less";

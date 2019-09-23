@@ -1,7 +1,14 @@
 $( function() {
 
     $('#modal-forgot').click( function () {
-        $('#exampleModal-entr').arcticmodal();
+        $('#exampleModal-entr').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
     $('#modal2').click( function () {

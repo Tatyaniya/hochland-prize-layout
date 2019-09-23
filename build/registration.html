@@ -84,7 +84,7 @@
                     <li class="prizeMenu__item">
                         <a href="#" class="prizeMenu__link">призы</a>
                     </li>
-                    <li class="prizeMenu__item prizeMenu__item--active">
+                    <li class="prizeMenu__item">
                         <a href="winners.html" class="prizeMenu__link">победители</a>
                     </li>
                     <li class="prizeMenu__item">
@@ -93,81 +93,50 @@
                     <li class="prizeMenu__item">
                         <a href="feedback.html " class="prizeMenu__link">обратная связь</a>
                     </li>
-                    <li class="prizeMenu__item">
+                    <li class="prizeMenu__item prizeMenu__item--active">
                         <a href="entrance.html" class="prizeMenu__link">вход регистрация</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="winners">
-        <div class="container winners__container">
-            <div class="winCont">
-                <h2 class="winCont__title">
-                    Список победителей
+    <section class="registration">
+        <div class="container entrance__container">
+            <div class="regCont">
+                <h2 class="regCont__title">
+                    Регистрация
                 </h2>
-                <div class="winRegister">
-                    <div class="winRegister__header">
-                        <div class="winRegister__title">
-                            <div class="winRegister__icon">
-                                <img src="img/winners-icon-1.png" alt="icon">
-                            </div>
-                            <div class="winRegister__subtitle">
-                                Имя
-                            </div>
-                        </div>
-                        <div class="winRegister__title">
-                            <div class="winRegister__icon">
-                                <img src="img/winners-icon-2.png" alt="icon">
-                            </div>
-                            <div class="winRegister__subtitle">
+                <div class="regCont__form">
+                    <form action="#">
+                        <label class="entrCont__label entrCont__label--1">
+                            <span class="entrCont__text">
                                 телефон
+                            </span>
+                            <input type="text" class="entrCont__input" placeholder="+7 (___) _______">
+                        </label>
+                        <label class="entrCont__label entrCont__label--2">
+                            <span class="entrCont__text">
+                                Пароль
+                            </span>
+                            <input type="password" class="entrCont__input">
+                        </label>
+                        <div class="entrCont__forgot forgot">
+                            <a href="javascript:void(0);" class="forgot__link" id="modal-forgot">
+                                Забыли пароль?
+                            </a>
+                        </div>
+                        <div class="entrCont__buttons">
+                            <button type="submit" class="entrCont__btn button">
+                                войти
+                            </button>
+                            <div class="entrCont__register">
+                                или
+                                <a href="registration.html" class="entrCont__link">
+                                    ЗАРЕГИСТРИРУЙТЕСЬ
+                                </a>
                             </div>
                         </div>
-                        <div class="winRegister__title">
-                            <div class="winRegister__icon">
-                                <img src="img/winners-icon-3.png" alt="icon">
-                            </div>
-                            <div class="winRegister__subtitle">
-                                Приз
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="winRegister__list">
-                        <li class="winRegister__item">
-                            <div class="winRegister__name">
-                                Фамилия Имя Отчество
-                            </div>
-                            <div class="winRegister__phone">
-                                +7 999 ****99
-                            </div>
-                            <div class="winRegister__technic">
-                                Электрогриль «Тефаль»
-                            </div>
-                        </li>
-                        <li class="winRegister__item">
-                            <div class="winRegister__name">
-                                Фамилия Имя Отчество
-                            </div>
-                            <div class="winRegister__phone">
-                                +7 999 ****99
-                            </div>
-                            <div class="winRegister__technic">
-                                Электрогриль «Тефаль»
-                            </div>
-                        </li>
-                        <li class="winRegister__item">
-                            <div class="winRegister__name">
-                                Фамилия Имя Отчество
-                            </div>
-                            <div class="winRegister__phone">
-                                +7 999 ****99
-                            </div>
-                            <div class="winRegister__technic">
-                                Электрогриль «Тефаль»
-                            </div>
-                        </li>
-                    </ul>
+                    </form>
                 </div>
             </div>
         </div>
@@ -221,7 +190,28 @@
         </div>
     </div>
 </footer>
+<div style="display: none;">
+    <div class="modal modal-entrance" id="exampleModal-entr">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h3 class="modal__title">
+            ЗабылИ пароль?
+        </h3>
+        <div class="modal__content">
+            <p class="modal__text">
+                Нажмите на кнопку «Получить пароль».
+            </p>
+            <p class="modal__text modal__text--last">
+                На указанный при регистрации номер телефона придет
+                <span class="text-red-big">SMS</span><span class="text-red"> с вашим паролем.</span>
+            </p>
+            <a href="javascript:void(0);" class="modal__link get-password">Получить пароль</a>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

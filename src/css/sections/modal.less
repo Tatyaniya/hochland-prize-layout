@@ -1,0 +1,55 @@
+.modal {
+    width: 700px;
+    background: @color_white;
+    padding: 60px 91px;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+
+    &-close {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    &__title {
+        &:extend(.title-3);
+    }
+
+    &__text {
+        color: #000;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+
+        &--last {
+            margin-bottom: 43px;
+        }
+    }
+}
+
+.text-red {
+    color: @color_red;
+}
+
+.text-red-big {
+    &:extend(.text-red);
+    text-transform: uppercase;
+}
+
+.modal__link {
+    height: 50px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: @coor_blue;
+}
+
+.get-password {
+    width: 100%;
+}
