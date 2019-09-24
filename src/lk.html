@@ -58,7 +58,7 @@
                             Всегда <span>выгодный</span>.
                         </p>
                     </div>
-                    <a href="#" class="offer-lk__link">
+                    <a href="#" class="offer-lk__link" id="qr-code">
                         загрузить QR-код с чека
                     </a>
                     <div class="offer__cashback">
@@ -274,6 +274,136 @@
         </div>
     </div>
 </footer>
+<div style="display: none;">
+    <form class="modal modal-qr-code" id="exampleModal-qr-code">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h3 class="modal__title">
+            Загрузить Qr-код с чека
+        </h3>
+        <form class="modal__form">
+            <div class="modal__subtitle">
+                Продукт
+            </div>
+            <div class="modal__text">
+                Выберите в списке продукты Hochland из вашего чека и их количество. 
+                Если продуктов несколько нажмите кнопку «Добавить».
+            </div>
+            <div class="modal__choice">
+                <div class="modal__over-name">
+                    <div class="modal__name-arrow">
+                        <img src="img/name-ar.png" alt="down">
+                    </div>
+                    <select name="name" id="qr-name" class="modal__select-name">
+                        <option value="1">Наименование продукта</option>
+                    </select>
+                </div>
+                <div class="modal__over-num">
+                    <div class="modal__num-arrow">
+                        <img src="img/num-ar.png" alt="arrow">
+                    </div>
+                    <select name="num" id="qr-num" class="modal__select-num">
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <a href="#" class="product__link" id="productLink">Добавить</a>
+            </div>
+            <div class="modal__subtitle">
+                Зарегистрируйте QR-код с чека, выбрав один из вариантов регистрации ниже
+            </div>
+            <div class="modalInfo">
+                <div class="modalInfo__subtitle">
+                    Обратите внимание:
+                </div>
+                <ul class="modalInfo__list">
+                    <li class="modalInfo__item">
+                        размер фото не должен превышать 1 мб;
+                    </li>
+                    <li class="modalInfo__item">
+                        на фото должен быть только qr-код;
+                    </li>
+                    <li class="modalInfo__item">
+                        при фотографировании qr-код не нужно сильно приближать к камере;
+                    </li>
+                    <li class="modalInfo__item">
+                        изображение на фото должно быть четкое и не размытое.
+                    </li>
+                </ul>
+            </div>
+            <div class="modalLoad">
+                <div class="modalLoad__inputs">
+                    <label class="modalLoad__input modalLoad__input--f">
+                        <div class="modalLoad__over">
+                            <div class="modalLoad__icon">
+                                <img src="img/load-m.png" alt="load">
+                            </div>
+                            <div class="modalLoad__text">
+                                Загрузить фото QR-кода <span class="text-red">из файла</span>
+                            </div>
+                        </div>
+                        <input type="file" name="load">
+                    </label>
+                    <label class="modalLoad__input">
+                        <div class="modalLoad__over">
+                            <div class="modalLoad__icon">
+                                <img src="img/scan.png" alt="scan">
+                            </div>
+                            <div class="modalLoad__text">
+                                Отсканировать QR-код <span class="text-red">через web-камеру</span>
+                            </div>
+                        </div>
+                        <input type="file" name="scan">
+                    </label>
+                </div>
+                <div class="modalLoad__img">
+                    <img src="img/tel.png" alt="phone">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div style="display: none;">
+    <div class="modal modal-new-code" id="exampleModal-load-code">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h3 class="modal__title">
+            Загрузить QR-код с чека
+        </h3>
+        <div class="modalSuccess">
+            <div class="modalSuccess__title">
+                QR-код успешно загружен
+            </div>
+            <p class="modal__text">
+                Ожидайте дальнейшей его модерации.
+            </p>
+            <p class="modal__text modal__text--last">
+                Проверка займет около 7 рабочих дней.
+            </p>
+            <a href="#" class="modal__link modal__link--all" id="loadClose">закрыть</a>
+        </div>
+    </div>
+</div>
+<div style="display: none;">
+    <div class="modal modal-new-code" id="exampleModal-error-code">
+        <div class="modal-close box-modal_close arcticmodal-close">
+            <img src="img/modal-close.png" alt="close">
+        </div>
+        <h3 class="modal__title">
+            Загрузить QR-код с чека
+        </h3>
+        <div class="modal__content">
+            <div class="modal__expired">
+                Не удается<br> зарегистрировать QR-код
+            </div>
+            <p class="modal__text modal__text--last">
+                Повторите попытку или обратитесь за помощью по электронному адресу службы поддержки hochland@kislorod.pro
+            </p>
+            <a href="#" class="modal__link modal__link--all">закрыть</a>
+        </div>
+    </div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/jquery.arcticmodal-0.3.min.js"></script>
 <script src="js/main.js"></script>

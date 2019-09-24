@@ -33,16 +33,37 @@ $( function() {
         });
     });
 
-    $('#modal4').click( function () {
-        $('#exampleModal4').arcticmodal();
+    $('#qr-code').click( function () {
+        $('#exampleModal-qr-code').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
-    $('#modal5').click( function () {
-        $('#exampleModal5').arcticmodal();
+    $('#productLink').click( function () {
+        $('#exampleModal-load-code').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
-    $('#modal6').click( function () {
-        $('#exampleModal6').arcticmodal();
+    $('#loadClose').click( function () {
+        $('#exampleModal-error-code').arcticmodal({
+            overlay: {
+                css: {
+                    backgroundColor: '#0a4486',
+                    opacity: 0.9
+                }
+            }
+        });
     });
 
 });
