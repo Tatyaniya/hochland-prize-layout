@@ -245,7 +245,8 @@ body {
 .winners,
 .feedback,
 .entrance,
-.registration {
+.registration,
+.lk {
   background: url('../img/bg-blue.jpg') no-repeat center top;
   background-size: cover;
 }
@@ -255,7 +256,8 @@ body {
 .winCont__title,
 .feedCont__title,
 .entrCont__title,
-.regCont__title {
+.regCont__title,
+.lkCont__title {
   font-size: 60px;
   line-height: 75px;
   font-weight: 800;
@@ -285,7 +287,8 @@ a {
   transition: all 0.5s ease;
 }
 
-.button {
+.button,
+.offer-lk__link {
   display: block;
   border: none;
   outline: none;
@@ -1252,6 +1255,107 @@ a {
 
 .entranceLinks__link:hover {
   border-bottom: 2px solid transparent;
+}
+
+.offer-lk {
+  background: url('../img/lk-bg2.jpg') no-repeat center top;
+  background-size: cover;
+}
+
+.offer-lk__link {
+  width: 518px;
+  margin-bottom: 90px;
+  border: 2px solid #ffd800;
+}
+
+.offer-lk__link:hover {
+  color: #ffd800;
+  background: #0a4486;
+}
+
+.offer-lk .offer__subtitle {
+  margin-bottom: 135px;
+}
+
+.lk {
+  padding-top: 66px;
+  padding-bottom: 110px;
+}
+
+.lkData {
+  max-width: 880px;
+  font-size: 24px;
+  color: #0a4486;
+  background: #fff;
+  padding: 30px 90px 13px;
+  margin: 0 auto 68px;
+}
+
+.lkData__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.lkData__icon {
+  width: 40px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-right: 50px;
+}
+
+.lkChecks,
+.lkCash {
+  background: #fff;
+}
+
+.lkChecks__list,
+.lkCash__list {
+  width: 1060px;
+}
+
+.lkChecks__header,
+.lkCash__header,
+.lkChecks__item,
+.lkCash__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: stretch;
+          align-items: stretch;
+}
+
+.lkChecks__col,
+.lkCash__col {
+  width: 180px;
+  min-height: 42px;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #0a4486;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.lkChecks__col--small,
+.lkCash__col--small {
+  width: 80px;
+}
+
+.lkChecks__col--big,
+.lkCash__col--big {
+  width: 270px;
+}
+
+.lkChecks {
+  margin-bottom: 70px;
 }
 
 .modal {
