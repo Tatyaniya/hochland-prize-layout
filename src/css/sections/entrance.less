@@ -11,12 +11,17 @@
 
     &__form {
         width: 790px;
+        .md(width, 100%);
     }
 
     &__label {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        .md-block({
+            flex-direction: column;
+
+        });
         &--1 {
             margin-bottom: 20px;
         }
@@ -31,6 +36,10 @@
         color: #fff;
         text-transform: uppercase;
         margin-right: 25px;
+        .md-block({
+            margin-bottom: 20px;
+            margin-right: 0;
+        });
     }
 
     &__input {
@@ -41,6 +50,7 @@
         color: @coor_blue;
         outline: none;
         border: none;
+        .xs(width, 100%);
 
         &::placeholder {
             font-size: 24px;
@@ -51,11 +61,15 @@
     &__buttons {
         width: 518px;
         margin-left: auto;
+        .md-block({
+            width: 100%;
+        });
     }
 
     &__btn {
         width: 340px;
         margin-bottom: 55px;
+        .xxs(width, 280px);
     }
 
     &__register,
@@ -63,6 +77,7 @@
         color: #fff;
         font-size: 24px;
         text-transform: uppercase;
+        .xxs(font-size, 18px);
     }
 
     &__register {
@@ -80,6 +95,7 @@
 .forgot {
     margin-bottom: 66px;
     text-align: right;
+    .md(text-align, center);
 
     &__link {
         font-size: 18px;

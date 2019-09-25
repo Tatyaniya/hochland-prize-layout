@@ -1,7 +1,7 @@
 .winners {
     &:extend(.section-bg);
     padding-top: 80px;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 }
 
 .winCont {
@@ -11,9 +11,33 @@
 }
 
 .winRegister {
+    .sm-block({
+        padding: 10px;
+        border: 1px solid #fff;
+    });
+
+    &__over {
+        .sm-block({
+            overflow-X: scroll;
+            padding-bottom: 10px;
+        });
+    }
+
     &__header {
         display: flex;
         margin-bottom: 34px;
+        .sm(display, none);
+    }
+
+    &__list {
+        .sm-block({
+            width: 738px;
+        });
+    }
+
+    &__item--mob {
+        display: none;
+        .sm(display, flex);
     }
 
     &__icon {
