@@ -1,5 +1,9 @@
 $( function() {
 
+    $('.humburger').click(function(){
+        $( ".menuMob__list" ).toggleClass('menuMob-open');
+    });
+
     $('#modal-forgot').click( function () {
         $('#exampleModal-entr').arcticmodal({
             overlay: {

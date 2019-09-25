@@ -8,36 +8,6 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-        <div class="debugGrid">
-            <div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
         <header class="header" id="header">
             <div class="container header__container">
                 <div class="header__content">
@@ -69,11 +39,46 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="humburger header__humburger"></button>
+                    <div class="humburger header__humburger">
+                        <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                            <path
+                                class="line top"
+                                d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                            <path
+                                class="line middle"
+                                d="m 70,50 h -40" />
+                            <path
+                                class="line bottom"
+                                d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </header>
         <section class="main">
+            <ul class="menuMob__list">
+                <li class="menuMob__item menuMob__item--active">
+                    <a href="index.html" class="menuMob__link">об акции</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="#" class="menuMob__link">призы</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="winners.html" class="menuMob__link">победители</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="#" class="menuMob__link">правила</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="feedback.html " class="menuMob__link">обратная связь</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="entrance.html" class="menuMob__link">вход / регистрация</a>
+                </li>
+                <li class="menuMob__item">
+                    <a href="hochland.ru" class="menuMob__link">перейти на сайт hochland.ru</a>
+                </li>
+            </ul>
             <div class="offer">
                 <div class="container offer__container">
                     <div class="offer__content">
@@ -89,7 +94,7 @@
                             </p>
                         </div>
                         <h1 class="offer__title">
-                            Главный приз – поездка в Германию!
+                            Главный<br> приз – поездка в Германию!
                         </h1>
                         <div class="offer__text">
                             Успей купить плавленый сыр в кругах, ломтях и ваннах до 10 декабря 2019 г в магазинах Москвы, Санкт-Петербурга, Московской и Ленинградской областей.
@@ -121,13 +126,16 @@
                             <a href="#" class="prizeMenu__link">правила</a>
                         </li>
                         <li class="prizeMenu__item">
-                            <a href="feedback.html " class="prizeMenu__link">обратная связь</a>
+                            <a href="feedback.html " class="prizeMenu__link">обратная<br> связь</a>
                         </li>
                         <li class="prizeMenu__item">
                             <a href="entrance.html" class="prizeMenu__link">вход регистрация</a>
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="text-mob">
+                Успей купить плавленый сыр в кругах, ломтях и ваннах до 10 декабря 2019 г в магазинах Москвы, Санкт-Петербурга, Московской и Ленинградской областей.
             </div>
         </section>
         <section class="win">
@@ -157,7 +165,7 @@
                         <div class="winTerm__img">
                             <img src="img/stock-2.png" alt="приз">
                         </div>
-                        <div class="winTerm__desc">
+                        <div class="winTerm__desc winTerm__desc--order">
                             <div class="winTerm__numb">2</div>
                             <div class="winTerm__text">
                                 <p class="winTerm__yellow">
@@ -192,7 +200,7 @@
                         <div class="winTerm__img">
                             <img src="img/stock-4.png" alt="приз">
                         </div>
-                        <div class="winTerm__desc">
+                        <div class="winTerm__desc winTerm__desc--order">
                             <div class="winTerm__numb">4</div>
                             <div class="winTerm__text">
                                 <p class="winTerm__white winTerm__white--mb">
@@ -220,8 +228,9 @@
                     <div class="priseItem">
                         <div class="priseItem__img">
                             <img src="img/prize-1.png" alt="приз">
+                            <div class="priseItem__x">x20</div>
                         </div>
-                        <div class="priseItem__desc">
+                        <div class="priseItem__desc priseItem__desc--md">
                             <h3 class="priseItem__title">
                                 Техника-гриль
                             </h3>
@@ -233,8 +242,9 @@
                     <div class="priseItem">
                         <div class="priseItem__img priseItem__img--small">
                             <img src="img/prize-2.png" alt="приз">
+                            <div class="priseItem__x">x10</div>
                         </div>
-                        <div class="priseItem__desc">
+                        <div class="priseItem__desc priseItem__desc--md">
                             <h3 class="priseItem__title">
                                 планшет
                             </h3>
@@ -248,7 +258,7 @@
                             <img src="img/prize-3.png" alt="приз">
                         </div>
                         <div class="priseItem__desc">
-                            <h3 class="priseItem__title">
+                            <h3 class="priseItem__title priseItem__title--mdc">
                                 Путешествие на двоих в Германию
                             </h3>
                             <div class="priseItem__text">

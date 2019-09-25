@@ -1,6 +1,55 @@
+.main {
+    position: relative;
+}
+
+.menuMob__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+}
+
+.menuMob__item {
+    height: calc(100%/7);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 2px solid @color_red;
+    &:last-child {
+        border-bottom: transparent;
+    }
+}
+
+.menuMob__link {
+    width: 100%;
+    font-size: 20px;
+    color: @coor_blue;
+    text-transform: uppercase;
+}
+
+.menuMob__item--active {
+    background: @color_red;
+}
+
+.menuMob__item--active .menuMob__link {
+    color: @color_white;
+}
+.menuMob-open {
+    display: flex;
+}
+
 .offer {
     background: url('../img/first-bg.jpg') no-repeat center top;
     background-size: cover;
+    .xs-block({
+        background: url('../img/bg-mob.png') no-repeat center top;
+        background-size: cover;
+    });
 
     &__content {
         position: relative;
@@ -15,6 +64,8 @@
         position: absolute;
         top: -67px;
         right: 221px;
+        .md(right, 50px);
+        .sm(display, none);
     }
 
     &__subtitle {
@@ -23,6 +74,10 @@
         & span {
             text-transform: uppercase;
         }
+        .sm-block({
+            width: 200px;
+            margin-left: auto;
+        });
     }
 
     &__title {
@@ -30,11 +85,23 @@
         font-size: 42px;
         font-weight: bold;
         margin-bottom: 4%;
+
+        & br {
+            display: none;
+            .sm(display, inline);
+        }
+        .sm-block({
+            font-size: 25px;
+            width: 200px;
+            margin-left: auto;
+            margin-bottom: 215px;
+        });
     }
 
     &__text {
         width: 325px;
         margin-bottom: 45px;
+        .sm(display, none);
     }
 
     &__cashback {
@@ -43,6 +110,15 @@
         line-height: 175px;
         letter-spacing: -12px;
         text-transform: uppercase;
+        .bmd-block({
+            font-size: 175px;
+            line-height: 120px;
+        });
+        .sm-block({
+            font-size: 77px;
+            line-height: 53px;
+            letter-spacing: -5px;
+        });
     }
 
     &__cashback p {
@@ -58,6 +134,10 @@
     text-align: center;
     color: @color_white;
     background: @coor_blue;
+    .sm-block({
+        font-size: 60px;
+        line-height: 42px;
+    });
     
     &__text {
         position: relative;
@@ -74,6 +154,7 @@
 .prizeMenu__list {
     display: flex;
     align-items: center;
+    .sm(display, none);
 }
 
 .prizeMenu__item {
@@ -85,6 +166,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .md(font-size, 15px);
 }
 
 .prizeMenu__link {
@@ -97,4 +179,12 @@
 
 .prizeMenu__item--active .prizeMenu__link {
     color: @color_white;
+}
+
+.text-mob {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 20px;
+    display: none;
+    .sm(display, block);
 }

@@ -9,6 +9,10 @@
     align-items: center;
     position: relative;
 
+    .md-block({
+        flex-direction: column;
+    });
+
     &--arrowRight:after,
     &--arrowLeft:after {
         width: 190px;
@@ -17,6 +21,7 @@
         content: "";
         position: absolute;
         z-index: 3;
+        .md(display, none);
     }
 
     &--arrowRight:after {
@@ -41,6 +46,16 @@
         color: @color_white;
         display: flex;
         align-items: center;
+        .md(margin-bottom, 52px);
+        .sm-block({
+            width: 100%;
+            justify-content: center;
+            font-size: 18px;
+        });
+
+        &--order {
+            .md(order, -1);
+        }
     }
 
     &__numb {
@@ -49,12 +64,16 @@
         font-weight: bold;
         font-style: italic;
         color: @color_blue_light;
+        //.md(margin-right, 30px);
+        .sm(font-size, 93px);
+        .xs(flex-basis, 75px);
     }
 
     &__yellow {
         font-size: 40px;
         text-transform: uppercase;
         color: @color_yellow;
+        .sm(font-size, 24px);
     }
 
     &__img {
