@@ -4,6 +4,14 @@ $( function() {
         $( ".menuMob__list" ).toggleClass('menuMob-open');
     });
 
+    $('.link-prize').click( function(e) {
+        e.preventDefault();
+		elementClick = $(e.currentTarget).attr("href");
+		destination = $(elementClick).offset().top;
+        $("body,html").animate({scrollTop: destination }, 800);
+    });
+
+
     $('#modal-forgot').click( function () {
         $('#exampleModal-entr').arcticmodal({
             overlay: {
