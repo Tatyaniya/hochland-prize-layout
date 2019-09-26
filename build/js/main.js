@@ -37,7 +37,7 @@ $( function() {
         });
     });
 
-    $('#qr-code').click( function () {
+    $('.qr-code').click( function () {
         $('#exampleModal-qr-code').arcticmodal({
             overlay: {
                 css: {

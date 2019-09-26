@@ -11,6 +11,7 @@
     
     &__form {
         width: 790px;
+        .md(width, 100%);
     }
 }
 
@@ -24,12 +25,17 @@
         font-size: 24px;
         color: #fff;
         position: relative;
+        .md-block({
+            flex-direction: column;
+            width: 100%;
+        });
     }
 
     &__label--obligatory {
         width: 100%;
         align-items: flex-start;
         justify-content: space-between;
+        .md(flex-direction, row);
     }
 
     &__row {
@@ -37,20 +43,31 @@
         &--first {
             justify-content: center;
             padding-left: 45px;
+            .md(padding-left, 0);
         }
         &--confirmation {
             width: 518px;
             margin-left: auto;
+            .md-block({
+                padding-top: 12px;
+                margin-right: auto;
+            });
+            .xs(width, 100%);
         }
     }
 
     &__subtitle {
         text-transform: uppercase;
         margin-right: 25px;
+        .md-block({
+            margin-right: 0;
+            margin-bottom: 20px;
+        });
     }
 
     &__select-wrapper {
         position: relative;
+        .xs(width, 100%);
     }
 
     &__select-choice {
@@ -66,6 +83,7 @@
 
     &__text {
         font-size: 16px;
+        .xxs(font-size, 14px);
 
         &--long {
             width: 94%;
@@ -85,10 +103,12 @@
         color: @coor_blue;
         outline: none;
         border: none;
+        .xs(width, 100%);
 
         &::placeholder {
             font-size: 24px;
             color: @coor_blue;
+            .xs(font-size, 18px);
         }
     }
 
@@ -117,16 +137,23 @@
         width: 518px;
         margin-top: 64px;
         margin-left: auto;
+        .md(margin-right, auto);
+        .xs(width, 100%);
     }
     &__btn {
         width: 340px;
         margin-bottom: 48px;
+        .xs-block({
+            width: 280px;
+            font-size: 18px;
+        });
     }
 }
 
 .gender {
     width: 518px;
     display: flex;
+    .xs(width, 100%);
     &__item {
         display: flex;
         align-items: center;
@@ -168,11 +195,17 @@
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
+    .xs-block({
+        font-size: 18px;
+    });
 
     &__link {
         color: #fff;
         border-bottom: 2px solid #fff;
         margin-bottom: 6px;
+        .xs-block({
+            font-size: 18px;
+        });
 
         &:hover {
             border-bottom: 2px solid transparent;

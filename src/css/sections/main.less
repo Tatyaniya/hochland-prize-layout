@@ -43,13 +43,15 @@
     display: flex;
 }
 
+.offer-img-mob {
+    display: none;
+    .sm(display, block);
+}
+
 .offer {
     background: url('../img/first-bg.jpg') no-repeat center top;
     background-size: cover;
-    .xs-block({
-        background: url('../img/bg-mob.png') no-repeat center top;
-        background-size: cover;
-    });
+    .sm(display, none);
 
     &__content {
         position: relative;
@@ -134,10 +136,7 @@
     text-align: center;
     color: @color_white;
     background: @coor_blue;
-    .sm-block({
-        font-size: 60px;
-        line-height: 42px;
-    });
+    .sm(display, none);
     
     &__text {
         position: relative;

@@ -7,12 +7,38 @@
         &:extend(.button);
         margin-bottom: 9%;
         border: 2px solid @color_yellow;
+        .xs-block({
+            font-size: 16px;
+            width: 100%;
+        });
 
         &:hover {
             color: @color_yellow;
             background: @coor_blue;
         }
     }
+}
+
+.offer-link-mob {
+    display: none;
+    font-size: 20px;
+    width: 280px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: @coor_blue;
+    background: @color_yellow;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    .sm-block({
+        display: block;
+    });
+    .xs(top, 55%);
+    .xxs(top, 50%);
 }
 
 .offer-lk .offer__subtitle {
@@ -38,6 +64,10 @@
     background: #fff;
     padding: 30px 90px 13px;
     margin: 0 auto 68px;
+    .xs-block({
+        padding: 40px 20px;
+        font-size: 18px;
+    });
 
     &__item {
         display: flex;
@@ -50,14 +80,26 @@
         display: flex;
         justify-content: center;
         margin-right: 50px;
+        .xs(margin-right, 30px);
     }
 }
 
 .lkChecks,
 .lkCash {
-    background: #fff;
+    .bmd-block({
+        padding: 10px;
+        border: 1px solid #fff;
+    });
+
+    &__over {
+        .bmd-block({
+            overflow-X: scroll;
+            padding-bottom: 10px;
+        });
+    }
 
     &__list {
+        background: #fff;
         width: 1060px;
     }
 
@@ -81,7 +123,7 @@
             width: 80px;
         }
         &--big {
-            width: 270px;
+            width: 271px;
         }
     }
 }
