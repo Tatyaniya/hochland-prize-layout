@@ -11,6 +11,13 @@ $( function() {
         $("body,html").animate({scrollTop: destination }, 800);
     });
 
+    $('.prizeMenu__link--fb').click( function(e) {
+        e.preventDefault();
+		elementClick = $(e.currentTarget).attr("href");
+		destination = $(elementClick).offset().top;
+        $("body,html").animate({scrollTop: destination }, 800);
+    });
+
 
     $('#modal-forgot').click( function () {
         $('#exampleModal-entr').arcticmodal({
